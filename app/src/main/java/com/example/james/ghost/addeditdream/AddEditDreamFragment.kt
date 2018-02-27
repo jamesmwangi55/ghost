@@ -50,7 +50,7 @@ class AddEditDreamFragment : Fragment() {
 
         makeToast("Make sure device is connected to internet")
 
-        firestore.collection("tags")
+        firestore.collection(TAGS_COLLECTION)
                 .get()
                 .addOnCompleteListener{
                     if (it.isSuccessful) {
@@ -92,6 +92,8 @@ class AddEditDreamFragment : Fragment() {
             ref.set(dream)
                     .addOnSuccessListener {
                         makeToast("Item saved")
+                        edit_text_description.setText("")
+                        edit_text_title.setText("")
                     }
                     .addOnFailureListener { makeToast("Item save failed") }
         }
