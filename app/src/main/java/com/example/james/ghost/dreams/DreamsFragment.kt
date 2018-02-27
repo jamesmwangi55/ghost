@@ -30,7 +30,6 @@ class DreamsFragment : Fragment() {
     private var options: FirestoreRecyclerOptions<Dream>? = null
     private var adapter: FirestoreRecyclerAdapter<Dream, DreamViewHolder>? = null
 
-    // instantite firestore
     val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
     val DREAM_COLLECTION = "dreams"
     val TAG = "DreamsFragment"
