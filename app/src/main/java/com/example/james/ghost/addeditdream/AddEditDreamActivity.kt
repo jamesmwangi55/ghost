@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import com.example.james.ghost.SingleFragmentActivity
+import com.google.firebase.firestore.FirebaseFirestore
 
 class AddEditDreamActivity : SingleFragmentActivity() {
 
@@ -19,5 +20,9 @@ class AddEditDreamActivity : SingleFragmentActivity() {
     override fun createFragment(): Fragment {
         return AddEditDreamFragment.newInstance()
     }
+
+
+
+
 
 }

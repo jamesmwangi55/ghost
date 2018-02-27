@@ -8,12 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.james.ghost.R
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 /**
  * A simple [Fragment] subclass.
  */
 class AddEditDreamFragment : Fragment() {
+
+    // instantite firestore
+    val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
 
 
     companion object {
@@ -30,5 +34,8 @@ class AddEditDreamFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_add_edit_dream, container, false)
     }
+
+
+
 
 }// Required empty public constructor
