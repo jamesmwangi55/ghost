@@ -9,15 +9,15 @@ import java.util.*
 class Dream: Model {
     var title: String? = null
     var description: String? = null
-    var tag: String? = null
+    var tags: Array<String>? = null
     @ServerTimestamp
     var timestamp: Date? = null
 
     constructor() {}
 
-    constructor(title: String, description: String, tag: String) {
+    constructor(title: String, description: String, tags: Array<String>) {
         this.description = description
         this.title = title
-        this.tag = tag
+        this.tags = tags
     }
 }
