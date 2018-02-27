@@ -9,13 +9,13 @@ import java.util.*
 class Dream: Model {
     var title: String? = null
     var description: String? = null
-    var tags: Array<String>? = null
+    var tags: MutableList<String> = mutableListOf()
     @ServerTimestamp
     var timestamp: Date? = null
 
     constructor() {}
 
-    constructor(title: String, description: String, tags: Array<String>) {
+    constructor(title: String, description: String, tags: MutableList<String>) {
         this.description = description
         this.title = title
         this.tags = tags
