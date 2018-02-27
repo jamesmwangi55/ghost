@@ -1,0 +1,24 @@
+package com.example.james.ghost.dreams
+
+import android.content.Context
+import android.content.Intent
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import com.example.james.ghost.SingleFragmentActivity
+
+class DreamsActivity : SingleFragmentActivity() {
+
+    companion object {
+        fun newIntent(context: Context): Intent {
+            val intent: Intent = Intent(context, DreamsActivity::class.java)
+            return intent;
+        }
+    }
+
+    override fun createFragment(): Fragment {
+        return DreamsFragment.newInstance()
+    }
+
+
+}
