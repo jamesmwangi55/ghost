@@ -53,7 +53,7 @@ class AddEditDreamFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        makeToast("Make sure device is connected to internet")
+        makeToast("Make sure device has an internet connection")
 
         firestore.collection(TAGS_COLLECTION)
                 .get()
