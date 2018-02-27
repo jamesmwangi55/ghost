@@ -11,7 +11,7 @@
         android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_open_sell"
+        android:id="@+id/fab_open_add_edit_dream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_16dp"
